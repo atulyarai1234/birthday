@@ -62,16 +62,16 @@
     <button class="no" onclick="alert('Aww 😭 still friends?')">NO 🙈</button>
   </div>
 
-  <script>
-    function sendMail() {
-      const email = "yourmail@gmail.com"; // ← change this
-      const subject = "My answer 💖";
-      const body = "YES! I would love to go on a date with you 😍";
-
-      window.location.href =
-        `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    }
-  </script>
+<script>
+  function sendMail() {
+    document.querySelector(".card").innerHTML = `
+      <h1>🥰 It’s a date!</h1>
+      <p>Yayyy 💖 you’re officially going on a date with me.</p>
+      <p>Wear something nice 😉✨</p>
+      <p>See you soon 💫</p>
+    `;
+  }
+</script>
 
 </body>
 </html>
